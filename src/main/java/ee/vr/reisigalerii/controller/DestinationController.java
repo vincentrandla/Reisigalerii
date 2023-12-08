@@ -36,4 +36,10 @@ public class DestinationController {
                 });
         return new ResponseEntity<>(destinationRepository.findAll(), HttpStatus.OK);
     }
+
+    @DeleteMapping("destination/{id}")
+    public ResponseEntity<List<Destination>> deleteDestination(@PathVariable Long id) {
+        destinationRepository.deleteById(id);
+        return new ResponseEntity<>(destinationRepository.findAll(), HttpStatus.OK);
+    }
 }

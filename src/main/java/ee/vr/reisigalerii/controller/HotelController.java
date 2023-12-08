@@ -1,6 +1,7 @@
 package ee.vr.reisigalerii.controller;
 
 
+import ee.vr.reisigalerii.model.Destination;
 import ee.vr.reisigalerii.model.Hotel;
 import ee.vr.reisigalerii.repository.HotelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,12 @@ public class HotelController {
                     hotel.setBasePrice(updatedHotel.getBasePrice());
                     return hotelRepository.save(hotel);
                 });
+        return new ResponseEntity<>(hotelRepository.findAll(), HttpStatus.OK);
+    }
+
+    @DeleteMapping("hotel/{id}")
+    public ResponseEntity<List<Hotel>> deleteHotel(@PathVariable Long id) {
+        hotelRepository.deleteById(id);
         return new ResponseEntity<>(hotelRepository.findAll(), HttpStatus.OK);
     }
 }
