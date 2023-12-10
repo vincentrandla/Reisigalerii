@@ -4,15 +4,38 @@
   box-sizing: inherit;
 }
 
+button {
+  padding: 8px 16px;
+  color: rgb(0, 0, 255);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+body {
+  background: rgb(255, 255, 255);
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(0, 0, 255);
+}
+
 .app {
-  border: 1px solid red;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
   margin-left: 10rem;
   margin-right: 10rem;
 }
 
+/* HEADER STYLES */
+
 .header {
   border: 1px solid red;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,23 +50,77 @@
   margin-left: auto;
 }
 
-.reisi_btn,
-.contact_btn,
-.blogi_btn {
-  padding: 8px 16px;
-  color: rgb(0, 0, 255);
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-
 .rg_logo {
-  width: 12rem;
+  width: 10rem;
   height: auto;
 }
 
 .rg_logo:hover {
-  opacity: 0.75;
   cursor: pointer;
+}
+
+/* SEARCH STYLES */
+
+.search {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.search_bar {
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 17px;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 5px;
+  flex-grow: 1;
+  height: 2rem;
+  width: 300px;
+}
+
+/* TRAVEL CONTENT */
+
+.thumbnail_container {
+  height: 25rem;
+  width: 30rem;
+  position: relative;
+  overflow: hidden;
+  border: #ddd; /* #ddd */
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.thumbnail_container:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail_image {
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.thumbnail_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  border-radius: 0 0 5px 5px;
+}
+
+.travel_containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

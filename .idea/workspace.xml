@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbb467b7-aa0a-4964-8547-43637677c3c9" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/ReisigaleriiApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/controller/DestinationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/controller/HotelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/controller/SearchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/model/Destination.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/model/Hotel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/repository/DestinationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/repository/HotelRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/service/DestinationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/vr/reisigalerii/service/DestinationServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ee/vr/reisigalerii/ReisigaleriiApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/reisigaleriife/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/reisigaleriife/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/reisigaleriife/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/reisigaleriife/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/eosjo/Desktop/Stufffff/progekoodid/Spring/WebShop/Webshop-kodus-main",
+    "last_opened_file_path": "C:/Users/eosjo/Desktop/Stufffff/progekoodid/Reisigalerii/Backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +80,7 @@
       <workItem from="1701682242217" duration="12187000" />
       <workItem from="1701937766303" duration="122000" />
       <workItem from="1702020997596" duration="6328000" />
+      <workItem from="1702210230924" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
