@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+/* BODY STYLES */
+
+li a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  border: none;
 }
 
 button {
@@ -14,12 +25,7 @@ button {
 }
 
 body {
-  font-family: sans-serif, Arial, Helvetica;
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(0, 0, 255);
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -28,7 +34,7 @@ footer {
 }
 
 .app {
-  background-color: lightcyan;
+  background-color: rgb(95, 233, 233);
   text-align: center;
   padding: 20px;
   margin-left: 10rem;
@@ -37,7 +43,7 @@ footer {
 
 /* HEADER STYLES */
 
-.header {
+.navbar {
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -45,15 +51,25 @@ footer {
   padding: 10px;
 }
 
-.header_btns {
+.navbar_menu {
   display: flex;
   gap: 3rem;
   margin-right: auto;
   margin-left: auto;
 }
 
+.navbar_btns {
+  list-style-type: none;
+  padding: 8px 16px;
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
 .rg_logo {
-  width: 10rem;
+  width: 12rem;
   height: auto;
 }
 

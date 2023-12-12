@@ -40,7 +40,7 @@ const SearchCountries = () => {
 
   const handleSelectChange = (selectedOption) => {
     if (selectedOption) {
-      window.location.href = `/reisipakkumised/${selectedOption.label}`;
+      window.location.href = `/reisipakkumised/${selectedOption.value}`;
     }
   };
 

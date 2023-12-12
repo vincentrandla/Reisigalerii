@@ -21,11 +21,11 @@ public class SearchController {
     DestinationService destinationService;
 
     @GetMapping("destinations")
-    public ResponseEntity<List<Destination>> searchDestinations(@RequestParam("keyword") String keyword) {
+    public ResponseEntity<List<SearchDestinationDTO>> searchDestinations(@RequestParam("keyword") String keyword) {
         List<Destination> results = destinationService.searchDestinations(keyword);
         List<SearchDestinationDTO> dtos = results.stream()
                 .map(destination -> new SearchDestinationDTO(destination.getId(), destination.getName()))
                 .toList();
-        return new ResponseEntity<>(results, HttpStatus.OK);
+        return new ResponseEntity<>(dtos, HttpStatus.OK);
     }
 }

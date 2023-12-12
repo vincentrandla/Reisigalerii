@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <div>
       <div>Lehte ei leitud</div>
-      <Link to="/avaleht ">
+      <Link to="/">
         <button>Avalehele</button>
       </Link>
     </div>
