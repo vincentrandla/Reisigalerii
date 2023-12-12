@@ -1,5 +1,6 @@
 package ee.vr.reisigalerii.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,5 +27,6 @@ public class Hotel {
 
     @ManyToOne
     @JoinColumn(name = "destination_id")
+    @JsonIgnore
     private Destination destination;
 }

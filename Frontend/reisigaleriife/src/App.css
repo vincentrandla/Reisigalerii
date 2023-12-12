@@ -14,7 +14,6 @@ button {
 }
 
 body {
-  background: rgb(255, 255, 255);
   font-family: sans-serif, Arial, Helvetica;
 }
 
@@ -23,10 +22,15 @@ a:visited {
   color: rgb(0, 0, 255);
 }
 
+footer {
+  padding: 10px;
+  margin-top: 10px;
+}
+
 .app {
+  background-color: lightcyan;
   text-align: center;
   padding: 20px;
-  border: 1px solid black;
   margin-left: 10rem;
   margin-right: 10rem;
 }
@@ -34,7 +38,6 @@ a:visited {
 /* HEADER STYLES */
 
 .header {
-  border: 1px solid red;
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -43,7 +46,6 @@ a:visited {
 }
 
 .header_btns {
-  border: 1px solid red;
   display: flex;
   gap: 3rem;
   margin-right: auto;
@@ -66,7 +68,6 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
 }
 
 .search_bar {
@@ -81,14 +82,14 @@ a:visited {
   width: 300px;
 }
 
-/* TRAVEL CONTENT */
+/* TRAVEL CONTENT FRONT PAGE */
 
 .thumbnail_container {
   height: 25rem;
   width: 30rem;
   position: relative;
   overflow: hidden;
-  border: #ddd; /* #ddd */
+  border: #ddd;
   margin: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -123,4 +124,55 @@ a:visited {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+/* FOOTER */
+
+.social_icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 450px;
+  margin-left: 450px;
+}
+
+.fb_image {
+  height: 75px;
+  border-radius: 90px;
+}
+
+.github_image {
+  height: 75px;
+}
+
+.fb_image:hover,
+.github_image:hover {
+  transition: transform 0.3s;
+  transform: scale(1.25);
+}
+
+.copyright_p {
+  padding: 15px;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkcyan;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(26, 118, 118);
 }

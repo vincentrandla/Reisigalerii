@@ -20,8 +20,9 @@ public class Destination {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+    private int price;
     private String description;
 
-    @OneToMany(mappedBy = "destination")
+    @OneToMany(mappedBy = "destination", cascade = CascadeType.ALL)
     private List<Hotel> hotels;
 }
