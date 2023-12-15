@@ -19,15 +19,19 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "blogi",
+    path: "/blogi",
     element: <BlogPage />,
   },
   {
-    path: "kontakt",
+    path: "/kontakt",
     element: <ContactPage />,
   },
+  /* { 
+    path: "/reisipakkumised",
+    element: <TravelOffer />,
+  }, */
   {
-    path: "reisipakkumised/*",
+    path: "/reisipakkumised/*",
     element: (
       <Routes>
         <Route index={<TravelOffer />} />

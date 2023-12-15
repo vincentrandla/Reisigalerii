@@ -47,6 +47,7 @@ const TravelContainer = ({ id, thumbnailSrc }) => {
         src={thumbnailSrc}
         alt={travelInfo.name}
         className="thumbnail_image"
+        loading="lazy"
       />
       <div className="thumbnail_content">
         <h3>{travelInfo.name}</h3>
