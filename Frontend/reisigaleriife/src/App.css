@@ -177,7 +177,7 @@ footer {
   font-weight: 600;
 }
 
-/* CUSTOM SCROLLBAR */
+/* CUSTOM SCROLLBAR
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -193,4 +193,4 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(26, 118, 118);
-}
+} */

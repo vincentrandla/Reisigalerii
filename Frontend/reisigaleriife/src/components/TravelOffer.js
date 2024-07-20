@@ -51,11 +51,12 @@ const TravelOffer = () => {
                 alt={`Thumbnail for ${hotel.name}`}
               />
             </div>
-            <h3 className="hotel_name">
-              {hotel.name}
-              <StarRating rating={hotel.rating} />
-            </h3>
+
             <div className="hotel_info">
+              <h3 className="hotel_name">
+                {hotel.name}
+                <StarRating rating={hotel.rating} />
+              </h3>
               <div className="hotel_location_price">
                 <li className="hotel_location">{hotel.location}</li>
                 <li className="hotel_price">{hotel.basePrice}€ /Inimene</li>
